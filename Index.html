@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceit Tutors | Expert Exam Coaching | CAPS, IEB, SACAI, ZIMSEC | Kempton Park</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --navy: #0f172a;
+            --blue: #1d4ed8;
+            --accent: #3b82f6;
+            --gold: #f59e0b;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%);
+        }
+        
+        .exam-marker-badge {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        
+        .teacher-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .teacher-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .experience-counter {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+        
+        .stat-highlight {
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .curriculum-tab {
+            transition: all 0.3s ease;
+        }
+        
+        .curriculum-tab.active {
+            background: #1e40af;
+            color: white;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px -10px rgba(37, 99, 235, 0.5);
+        }
+        
+        .btn-gold {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px -10px rgba(245, 158, 11, 0.5);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px -10px rgba(37, 211, 102, 0.5);
+        }
+        
+        .trust-indicator {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .method-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .method-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #3b82f6, #06b6d4);
+        }
+        
+        .pricing-featured {
+            background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+        
+        .nav-scrolled {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0);
+        }
+        
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+        }
+        
+        .marker-stamp {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .marker-stamp::after {
+            content: 'OFFICIAL';
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #f59e0b;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 10px;
+            transform: rotate(12deg);
+        }
+        
+        .level-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* Mobile Menu Animations */
+        .mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(100%);
+            background-color: #ffffff !important;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        .hamburger-line {
+            transition: all 0.3s ease;
+        }
+        
+        .hamburger.active .hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        
+        .hamburger.active .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Floating Back to Top Button */
+        .floating-back-to-top {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            transform: translateY(20px);
+        }
+        
+        .floating-back-to-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        /* Contact Modal */
+        .modal-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+        }
+        
+        .modal-content {
+            animation: modalSlide 0.3s ease-out;
+        }
+        
+        @keyframes modalSlide {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Carousel Styles */
+        .carousel-container {
+            overflow: hidden;
+            position: relative;
+            touch-action: pan-y;
+        }
+        
+        .carousel-track {
+            display: flex;
+            transition: transform 0.3s ease-out;
+        }
+        
+        .carousel-slide {
+            flex: 0 0 100%;
+            padding: 0 1rem;
+        }
+        
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .carousel-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #cbd5e1;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .carousel-dot.active {
+            background: #3b82f6;
+            width: 24px;
+            border-radius: 4px;
+        }
+
+        /* Mobile Stats Row */
+        @media (max-width: 768px) {
+            .mobile-stats-row {
+                display: flex;
+                justify-content: space-between;
+                gap: 0.5rem;
+            }
+            
+            .mobile-stats-row .stat-item {
+                flex: 1;
+                text-align: center;
+                padding: 0.75rem 0.5rem;
+            }
+            
+            .mobile-stats-row .stat-number {
+                font-size: 1.125rem;
+                font-weight: 700;
+                color: #f9fafd;
+                display: block;
+            }
+            
+            .mobile-stats-row .stat-label {
+                font-size: 0.625rem;
+                color: #abb8ca;
+                line-height: 1.2;
+                display: block;
+                margin-top: 0.25rem;
+            }
+        }
+        
+        /* Justified text for mobile */
+        @media (max-width: 768px) {
+            .hero-justify-mobile {
+                text-align: justify;
+                text-align-last: center;
+            }
+        }
+
+        /* Mobile Footer Compact */
+        @media (max-width: 768px) {
+            .mobile-footer-compact {
+                padding: 1.5rem 1rem;
+            }
+            
+            .mobile-footer-compact .footer-main {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .mobile-footer-compact .footer-logo {
+                justify-content: center;
+            }
+            
+            .mobile-footer-compact .footer-contact {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                font-size: 0.875rem;
+            }
+            
+            .mobile-footer-compact .footer-contact a {
+                color: #94a3b8;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+            
+            .mobile-footer-compact .footer-social {
+                justify-content: center;
+                margin-top: 0.5rem;
+            }
+            
+            .mobile-footer-compact .footer-credit {
+                margin-top: 1rem;
+                padding-top: 1rem;
+                border-top: 1px solid #334155;
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Navbar solid background fix */
+        #navbar {
+            background-color: #ffffff  !important;
+        }
+        
+        #navbar.nav-scrolled {
+            background-color: #ffffff !important;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+            /* Video Tour Section Styles */
+    .video-tour-container {
+        position: relative;
+        overflow: hidden;
+        resize: horizontal;
+        min-width: 320px;
+        max-width: 100%;
+    }
+    
+    /* Custom resize handle styling */
+    .video-tour-container::-webkit-resizer {
+        background: transparent;
+    }
+    
+    .video-wrapper {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    }
+    
+    .video-wrapper video,
+    .video-wrapper img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .video-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .play-button {
+        background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        box-shadow: 0 20px 40px -10px rgba(245, 158, 11, 0.5);
+        transition: all 0.3s ease;
+    }
+    
+    .play-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 25px 50px -10px rgba(245, 158, 11, 0.6);
+    }
+    
+    .resize-indicator {
+        pointer-events: none;
+        z-index: 20;
+    }
+    
+    .video-info {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    }
+    
+    /* Hide resize handle on mobile */
+    @media (max-width: 640px) {
+        .video-tour-container {
+            resize: none;
+            width: 100% !important;
+        }
+        
+        .resize-indicator {
+            display: none;
+        }
+    }
+    
+    /* Smooth transitions */
+    .video-tour-container {
+        transition: width 0.1s ease-out;
+    }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation - Fixed with solid background -->
+    <!-- Navigation - Fixed with solid background -->
+    <!-- Navigation - Fixed with solid background -->
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full top-0 left-0 right-0 z-[100] bg-white border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                        <i class="fa-solid fa-a"></i>
+                    </div>
+                    <div>
+                        <span class="logo-text text-xl sm:text-2xl text-slate-900">Aceit<span class="text-blue-600">Tutors</span></span>
+                        <div class="text-[10px] sm:text-xs text-slate-500 font-semibold uppercase tracking-wider -mt-1">Grades 3-12 | Tertiary | Exam Coaching</div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#gain" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">What You Gain</a>
+                    <a href="#offer" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">What We Offer</a>
+                    <a href="#results" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">Your Results</a>
+                    <a href="#investment" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">Your Investment</a>
+                </div>
+                
+                <!-- Desktop CTA Buttons -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="tel:0719370155" class="hidden xl:flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-blue-600">
+                        <i class="fa-solid fa-phone text-blue-600"></i>
+                        <span>071 937 0155</span>
+                    </a>
+                    <button onclick="openContactModal()" class="btn-primary text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-md">
+                        Contact Us
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none bg-white">
+                    <span class="w-6 h-0.5 bg-slate-700 rounded-full transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-slate-700 rounded-full transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-slate-700 rounded-full transition-all duration-300"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay - Completely separate from nav -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-white z-[99] transform translate-x-full transition-transform duration-300 md:hidden overflow-y-auto">
+        <div class="pt-24 px-6 pb-8 space-y-2">
+            <a href="#gain" class="block py-4 px-4 text-lg font-semibold text-slate-700 hover:bg-slate-50 rounded-lg transition-colors border-b border-slate-100">What You Gain</a>
+            <a href="#offer" class="block py-4 px-4 text-lg font-semibold text-slate-700 hover:bg-slate-50 rounded-lg transition-colors border-b border-slate-100">What We Offer</a>
+            <a href="#results" class="block py-4 px-4 text-lg font-semibold text-slate-700 hover:bg-slate-50 rounded-lg transition-colors border-b border-slate-100">Your Results</a>
+            <a href="#investment" class="block py-4 px-4 text-lg font-semibold text-slate-700 hover:bg-slate-50 rounded-lg transition-colors border-b border-slate-100">Your Investment</a>
+            
+            <div class="mt-6 space-y-4">
+                <a href="tel:0719370155" class="flex items-center gap-4 py-4 px-4 bg-slate-50 rounded-lg text-slate-700 font-semibold">
+                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <div class="text-sm text-slate-500">Call us</div>
+                        <div class="text-lg font-bold">071 937 0155</div>
+                    </div>
+                </a>
+                
+                <button onclick="openContactModal(); closeMobileMenu();" class="w-full btn-primary text-white py-4 rounded-xl font-bold text-lg shadow-lg">
+                    Contact Us
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27659327413" target="_blank" class="floating-whatsapp btn-whatsapp w-14 h-14 rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Floating Back to Top Button -->
+    <button onclick="scrollToTop()" id="back-to-top" class="floating-back-to-top btn-primary w-12 h-12 rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform">
+        <i class="fa-solid fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="fixed inset-0 z-[200] hidden">
+        <div class="modal-overlay absolute inset-0" onclick="closeContactModal()"></div>
+        <div class="relative min-h-screen flex items-center justify-center p-4">
+            <div class="modal-content bg-white rounded-2xl shadow-2xl w-full max-w-lg relative z-[210] max-h-[90vh] overflow-y-auto">
+                <div class="p-6 sm:p-8">
+                    <div class="flex justify-between items-center mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">Get in Touch</h3>
+                            <p class="text-slate-600 text-sm mt-1">We'll respond within 24 hours</p>
+                        </div>
+                        <button onclick="closeContactModal()" class="w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-times text-slate-600"></i>
+                        </button>
+                    </div>
+                    
+                    <form id="contact-form" class="space-y-4" onsubmit="handleContactSubmit(event)">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">First Name</label>
+                                <input type="text" name="firstName" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Last Name</label>
+                                <input type="text" name="lastName" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="Doe">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="john@example.com">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Phone Number</label>
+                            <input type="tel" name="phone" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="071 937 0155">
+                        </div>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Student Grade/Level</label>
+                                <select name="grade" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all">
+                                    <option value="">Select Level</option>
+                                    <option value="primary">Primary (Gr 3-7)</option>
+                                    <option value="high">High School (Gr 8-12)</option>
+                                    <option value="a-levels">A/O Levels</option>
+                                    <option value="tertiary">Tertiary/University</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700 mb-2">Subject</label>
+                                <select name="subject" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all">
+                                    <option value="">Select Subject</option>
+                                    <option value="mathematics">Mathematics</option>
+                                    <option value="physical-science">Physical Science</option>
+                                    <option value="life-science">Life Sciences</option>
+                                    <option value="accounting">Accounting</option>
+                                    <option value="cat">CAT</option>
+                                    <option value="it">Information Technology</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Message</label>
+                            <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all resize-none" placeholder="Tell us about your tutoring needs..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full btn-primary text-white py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                        
+                        <p class="text-xs text-slate-500 text-center">
+                            Or email us directly at <a href="mailto:cleareen@gmail.com" class="text-blue-600 hover:underline">cleareen@gmail.com</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-28 sm:pt-32 pb-16 sm:pb-20 lg:pt-40 lg:pb-32 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="text-white text-center lg:text-left">
+                    <!-- Trust Badge -->
+                    <div class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full trust-indicator mb-4 sm:mb-6">
+                        <i class="fa-solid fa-certificate text-amber-400"></i>
+                        <span class="text-xs sm:text-sm font-semibold text-amber-300">38+ Years Teaching | Matric Examiners</span>
+                    </div>
+                    
+                    <!-- Main Headline -->
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6">
+                        Your Path to <span class="text-amber-400">Distinction</span> Starts with <span class="text-amber-400">Exam Experts</span>
+                    </h1>
+                    
+                    <!-- Justified text on mobile -->
+                    <p class="hero-justify-mobile text-base sm:text-lg lg:text-xl text-blue-100 mb-6 sm:mb-8 leading-relaxed">
+                        From Grade 3 to University level—master your exams with coaches who have marked them. 
+                        CAPS, IEB, SACAI, ZIMSEC, A Levels & O Levels. Every mark matters. We make sure you capture yours.
+                    </p>
+                    
+                    <!-- Key Benefits - Mobile: One row layout -->
+                    <div class="mobile-stats-row mb-6 sm:hidden">
+                        <div class="stat-item bg-white/10 rounded-lg backdrop-blur-sm">
+                            <span class="stat-number text-white">38+</span>
+                            <span class="stat-label text-blue-200">Years<br>Experience</span>
+                        </div>
+                        <div class="stat-item bg-white/10 rounded-lg backdrop-blur-sm">
+                            <span class="stat-number text-amber-400">Examiners</span>
+                            <span class="stat-label text-blue-200">Who Mark<br>Your Papers</span>
+                        </div>
+                        <div class="stat-item bg-white/10 rounded-lg backdrop-blur-sm">
+                            <span class="stat-number text-blue-400">Gr 3-Univ</span>
+                            <span class="stat-label text-blue-200">All Levels<br>Covered</span>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Stats (hidden on mobile) -->
+                    <div class="hidden sm:flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mb-6 sm:mb-8">
+                        <div class="flex items-center gap-2 sm:gap-3">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-500/20 rounded-lg flex items-center justify-center text-green-400">
+                                <i class="fa-solid fa-arrow-up text-lg sm:text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-xl sm:text-2xl font-bold text-green-400">38+</div>
+                                <div class="text-xs sm:text-sm text-blue-200">Years Experience</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 sm:gap-3">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-amber-500/20 rounded-lg flex items-center justify-center text-amber-400">
+                                <i class="fa-solid fa-pen-nib text-lg sm:text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-xl sm:text-2xl font-bold text-amber-400">Examiners</div>
+                                <div class="text-xs sm:text-sm text-blue-200">Who Mark Your Papers</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 sm:gap-3">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-500/20 rounded-lg flex items-center justify-center text-blue-400">
+                                <i class="fa-solid fa-graduation-cap text-lg sm:text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-xl sm:text-2xl font-bold text-blue-400">Gr 3-Univ</div>
+                                <div class="text-xs sm:text-sm text-blue-200">All Levels Covered</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons - Hidden on mobile -->
+                    <div class="hidden sm:flex flex-col sm:flex-row gap-3 sm:gap-4">
+                        <a href="https://wa.me/27659327413" target="_blank" class="btn-whatsapp text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-xl text-center flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>WhatsApp Us Now</span>
+                        </a>
+                        <button onclick="openContactModal()" class="border-2 border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-white/10 transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </div>
+                    
+                    <p class="text-xs sm:text-sm text-blue-200 mt-4 flex items-center justify-center lg:justify-start gap-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>3 West Street (Old Standard Bank Building), Kempton Park, 1619</span>
+                    </p>
+                </div>
+                
+                <!-- Hero Card -->
+                <div class="hidden lg:block">
+                    <div class="bg-white rounded-2xl p-6 xl:p-8 shadow-2xl">
+                        <div class="flex items-center gap-4 mb-6 pb-6 border-b border-slate-100">
+                            <div class="w-14 h-14 xl:w-16 xl:h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-white text-2xl shadow-lg">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900 text-lg xl:text-xl">Your Academic Journey</div>
+                                <div class="text-green-600 font-semibold text-xs xl:text-sm">From Primary to University</div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3 xl:space-y-4 mb-6">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                                <div>
+                                    <div class="font-semibold text-slate-900 text-sm xl:text-base">Primary School Foundation</div>
+                                    <div class="text-xs xl:text-sm text-slate-600">Mathematics, Natural Science, EMS</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                                <div>
+                                    <div class="font-semibold text-slate-900 text-sm xl:text-base">High School Excellence</div>
+                                    <div class="text-xs xl:text-sm text-slate-600">Maths, Sciences, Accounting, IT, CAT</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                                <div>
+                                    <div class="font-semibold text-slate-900 text-sm xl:text-base">A Levels & O Levels</div>
+                                    <div class="text-xs xl:text-sm text-slate-600">Cambridge International Preparation</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                                <div>
+                                    <div class="font-semibold text-slate-900 text-sm xl:text-base">University Success</div>
+                                    <div class="text-xs xl:text-sm text-slate-600">Stats, Economics, Business, Programming</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-slate-50 rounded-xl p-4">
+                            <div class="flex items-center justify-between text-xs xl:text-sm mb-2">
+                                <span class="text-slate-600">Your Curriculums</span>
+                                <span class="font-bold text-slate-900">CAPS • IEB • SACAI • ZIMSEC</span>
+                            </div>
+                            <div class="flex items-center justify-between text-xs xl:text-sm mb-2">
+                                <span class="text-slate-600">Your Levels</span>
+                                <span class="font-bold text-slate-900">Grade 3 to University</span>
+                            </div>
+                            <div class="flex items-center justify-between text-xs xl:text-sm">
+                                <span class="text-slate-600">Your Goal</span>
+                                <span class="font-bold text-slate-900">Exam Success</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Bar -->
+    <section class="bg-slate-900 text-white py-3 sm:py-4 border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-3 sm:gap-6 text-xs sm:text-sm items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-amber-400"></i>
+                    <span class="hidden sm:inline">3 West Street, Kempton Park, 1619</span>
+                    <span class="sm:hidden">Kempton Park, 1619</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-amber-400"></i>
+                    <a href="tel:0719370155" class="hover:text-amber-400 transition-colors">071 937 0155</a>
+                </div>
+                <a href="https://wa.me/27659327413" target="_blank" class="flex items-center gap-2 bg-green-500 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-green-600 transition-colors">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>065 932 7413</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white border-b border-slate-200 py-6 sm:py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-8 text-center">
+                <div class="stat-highlight rounded-xl p-4 sm:p-6">
+                    <div class="text-2xl sm:text-3xl font-bold text-slate-900 mb-1">38+</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-medium">Years Teaching Experience</div>
+                </div>
+                <div class="stat-highlight rounded-xl p-4 sm:p-6">
+                    <div class="text-2xl sm:text-3xl font-bold text-slate-900 mb-1">Examiners</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-medium">Who Mark Your Papers</div>
+                </div>
+                <div class="stat-highlight rounded-xl p-4 sm:p-6">
+                    <div class="text-2xl sm:text-3xl font-bold text-slate-900 mb-1">Gr 3-Univ</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-medium">All Academic Levels</div>
+                </div>
+                <div class="stat-highlight rounded-xl p-4 sm:p-6">
+                    <div class="text-2xl sm:text-3xl font-bold text-slate-900 mb-1">4</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-medium">Curricula Covered</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour the Centre Section -->
+    <section id="tour" class="py-12 sm:py-20 bg-slate-900 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-8 sm:mb-12">
+                <span class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-white/10 text-amber-400 text-xs sm:text-sm font-bold uppercase tracking-wide mb-4">
+                    <i class="fa-solid fa-video"></i>
+                    Take a Tour
+                </span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">See Our Learning Centre</h2>
+                <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+                    Experience our modern, purpose-built tutoring environment designed for focused learning and academic success.
+                </p>
+            </div>
+            
+            <!-- Video Container with Resize Handle -->
+            <div class="video-tour-container mx-auto rounded-2xl overflow-hidden shadow-2xl border border-slate-700 relative group" style="max-width: 100%; width: 800px; resize: horizontal; min-width: 320px; max-width: 100%;">
+                <!-- Video Placeholder -->
+                <div class="video-wrapper relative bg-slate-800 aspect-video">
+                    <!-- Play Button Overlay -->
+                    <div class="video-overlay absolute inset-0 flex items-center justify-center bg-slate-800/80 group-hover:bg-slate-800/60 transition-all cursor-pointer" onclick="playVideo(this)">
+                        <div class="play-button w-20 h-20 sm:w-24 sm:h-24 bg-amber-500 rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-play text-slate-900 text-2xl sm:text-3xl ml-1"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Actual Video (hidden until play) -->
+                    <video class="video-player w-full h-full object-cover hidden" controls poster="">
+                        <source src="tour-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <!-- Placeholder Image -->
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200&h=675&fit=crop" alt="Tutoring Centre" class="video-poster w-full h-full object-cover">
+                    
+                    <!-- Resize Handle Indicator -->
+                    <div class="resize-indicator absolute bottom-2 right-2 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity cursor-se-resize">
+                        <i class="fa-solid fa-arrows-left-right text-white text-xs"></i>
+                    </div>
+                </div>
+                
+                <!-- Video Info Bar -->
+                <div class="video-info bg-slate-800 px-4 sm:px-6 py-3 sm:py-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-700">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-sm sm:text-base">Kempton Park Centre</div>
+                            <div class="text-xs text-slate-400">3 West Street, Old Standard Bank Building</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 text-sm text-slate-400">
+                        <span class="flex items-center gap-1">
+                            <i class="fa-solid fa-clock text-amber-400"></i>
+                            2:30 min
+                        </span>
+                        <span class="flex items-center gap-1">
+                            <i class="fa-solid fa-eye text-blue-400"></i>
+                            HD
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12">
+                <div class="bg-white/5 backdrop-blur rounded-xl p-4 sm:p-6 text-center border border-white/10">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-400 mx-auto mb-3">
+                        <i class="fa-solid fa-wifi text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-sm sm:text-base mb-1">High-Speed WiFi</h4>
+                    <p class="text-xs text-slate-400">Unlimited connectivity</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur rounded-xl p-4 sm:p-6 text-center border border-white/10">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center text-green-400 mx-auto mb-3">
+                        <i class="fa-solid fa-chalkboard text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-sm sm:text-base mb-1">Smart Boards</h4>
+                    <p class="text-xs text-slate-400">Interactive learning</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur rounded-xl p-4 sm:p-6 text-center border border-white/10">
+                    <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 mx-auto mb-3">
+                        <i class="fa-solid fa-couch text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-sm sm:text-base mb-1">Comfortable Seating</h4>
+                    <p class="text-xs text-slate-400">Ergonomic furniture</p>
+                </div>
+                <div class="bg-white/5 backdrop-blur rounded-xl p-4 sm:p-6 text-center border border-white/10">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center text-purple-400 mx-auto mb-3">
+                        <i class="fa-solid fa-mug-hot text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-sm sm:text-base mb-1">Refreshment Area</h4>
+                    <p class="text-xs text-slate-400">Tea & coffee station</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Gain - Mobile Carousel -->
+    <section id="gain" class="py-12 sm:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 sm:mb-16">
+                <span class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-green-100 text-green-700 text-xs sm:text-sm font-bold uppercase tracking-wide mb-4">
+                    <i class="fa-solid fa-gift"></i>
+                    What You Will Gain
+                </span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Every Advantage for Your Academic Success</h2>
+                <p class="text-base sm:text-lg lg:text-xl text-slate-600 max-w-3xl mx-auto px-4">
+                    From primary school foundations to university distinctions—gain the skills, strategies, 
+                    and confidence to excel at every academic level.
+                </p>
+            </div>
+            
+            <!-- Desktop Grid -->
+            <div class="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
+                <div class="teacher-card bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-slate-100">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-2xl sm:text-3xl mb-4 sm:mb-6">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Examiner-Approved Technique</h3>
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                        Learn the exact presentation, terminology, and format that official markers reward. 
+                        Never lose marks for "working not shown" or incomplete answers again.
+                    </p>
+                </div>
+                
+                <div class="teacher-card bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-slate-100">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl sm:text-3xl mb-4 sm:mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Maximum Mark Capture</h3>
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                        Master method marks and partial credit. Even when final answers are challenging, 
+                        capture 40-60% of available marks through proper working presentation.
+                    </p>
+                </div>
+                
+                <div class="teacher-card bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-slate-100">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl sm:text-3xl mb-4 sm:mb-6">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Time Management Mastery</h3>
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                        Complete papers with confidence and time to spare. Know which questions deserve 
+                        your minutes and how to pace yourself for optimal performance.
+                    </p>
+                </div>
+                
+                <div class="teacher-card bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-slate-100">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 text-2xl sm:text-3xl mb-4 sm:mb-6">
+                        <i class="fa-solid fa-bug-slash"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Error Elimination</h3>
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                        Stop making the common mistakes that cost students distinctions every year. 
+                        Our examiners know the traps—and how to help you avoid them.
+                    </p>
+                </div>
+                
+                <div class="teacher-card bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-slate-100">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 text-2xl sm:text-3xl mb-4 sm:mb-6">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Confidence Under Pressure</h3>
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                        Walk into every exam knowing exactly what to expect. No surprises, no panic—
+                        just calm, prepared execution of proven strategies.
+                    </p>
+                </div>
+                
+                <div class="teacher-card bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-slate-100">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 bg-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-2xl sm:text-3xl mb-4 sm:mb-6">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3">Lifelong Academic Skills</h3>
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                        Build study techniques, problem-solving approaches, and analytical thinking 
+                        that serve you from primary school through university and beyond.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mobile Carousel -->
+            <div class="sm:hidden">
+                <div class="carousel-container" id="gain-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <div class="teacher-card bg-white rounded-2xl p-6 shadow-lg border border-slate-100 h-full">
+                                <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-2xl mb-4">
+                                    <i class="fa-solid fa-pen-nib"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Examiner-Approved Technique</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Learn the exact presentation, terminology, and format that official markers reward.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="teacher-card bg-white rounded-2xl p-6 shadow-lg border border-slate-100 h-full">
+                                <div class="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-4">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Maximum Mark Capture</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Master method marks and partial credit. Capture 40-60% of available marks through proper working.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="teacher-card bg-white rounded-2xl p-6 shadow-lg border border-slate-100 h-full">
+                                <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-4">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Time Management</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Complete papers with confidence and time to spare. Know which questions deserve your minutes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="teacher-card bg-white rounded-2xl p-6 shadow-lg border border-slate-100 h-full">
+                                <div class="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 text-2xl mb-4">
+                                    <i class="fa-solid fa-bug-slash"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Error Elimination</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Stop making common mistakes that cost students distinctions every year.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="teacher-card bg-white rounded-2xl p-6 shadow-lg border border-slate-100 h-full">
+                                <div class="w-12 h-12 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 text-2xl mb-4">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Confidence Under Pressure</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Walk into every exam knowing exactly what to expect. No surprises, no panic.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="teacher-card bg-white rounded-2xl p-6 shadow-lg border border-slate-100 h-full">
+                                <div class="w-12 h-12 bg-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-2xl mb-4">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900 mb-2">Lifelong Academic Skills</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Build study techniques that serve you from primary school through university.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots" id="gain-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section id="offer" class="py-12 sm:py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 sm:mb-16">
+                <span class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-xs sm:text-sm font-bold uppercase tracking-wide mb-4">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    What We Offer You
+                </span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Comprehensive Academic Support</h2>
+                <p class="text-base sm:text-lg lg:text-xl text-slate-600">Every level. Every curriculum. Every subject you need to succeed.</p>
+            </div>
+            
+            <!-- Curriculums -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-8 sm:mb-12">
+                <div class="bg-blue-600 text-white rounded-xl p-4 sm:p-6 text-center shadow-lg">
+                    <div class="text-xl sm:text-2xl font-bold mb-1">CAPS</div>
+                    <div class="text-xs sm:text-sm text-blue-100">Department of Basic Education</div>
+                </div>
+                <div class="bg-amber-500 text-white rounded-xl p-4 sm:p-6 text-center shadow-lg">
+                    <div class="text-xl sm:text-2xl font-bold mb-1">IEB</div>
+                    <div class="text-xs sm:text-sm text-amber-100">Independent Examinations Board</div>
+                </div>
+                <div class="bg-green-600 text-white rounded-xl p-4 sm:p-6 text-center shadow-lg">
+                    <div class="text-xl sm:text-2xl font-bold mb-1">SACAI</div>
+                    <div class="text-xs sm:text-sm text-green-100">South African Comprehensive</div>
+                </div>
+                <div class="bg-red-600 text-white rounded-xl p-4 sm:p-6 text-center shadow-lg">
+                    <div class="text-xl sm:text-2xl font-bold mb-1">ZIMSEC</div>
+                    <div class="text-xs sm:text-sm text-red-100">Zimbabwe Schools Examination</div>
+                </div>
+            </div>
+            
+            <!-- Academic Levels -->
+            <div class="grid md:grid-cols-3 gap-4 sm:gap-8 mb-8 sm:mb-12">
+                <!-- Primary School -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-slate-100">
+                    <div class="flex items-center gap-3 mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-600 text-lg sm:text-xl">
+                            <i class="fa-solid fa-child"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900">Primary School</h3>
+                            <div class="text-green-600 font-semibold text-xs sm:text-sm">Grades 3-7</div>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-2 sm:space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-calculator text-green-500"></i>
+                            <span class="text-slate-700 text-sm sm:text-base">Mathematics</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-flask text-green-500"></i>
+                            <span class="text-slate-700 text-sm sm:text-base">Natural Science</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-chart-pie text-green-500"></i>
+                            <span class="text-slate-700 text-sm sm:text-base">Economic Management Sciences</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-slate-100">
+                        <div class="text-xs sm:text-sm text-slate-500">Build strong foundations for high school success</div>
+                    </div>
+                </div>
+                
+                <!-- High School -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border-2 border-blue-500 relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-3 sm:px-4 py-1 rounded-full text-[10px] sm:text-xs font-bold uppercase">Most Popular</div>
+                    <div class="flex items-center gap-3 mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-lg sm:text-xl">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900">High School</h3>
+                            <div class="text-blue-600 font-semibold text-xs sm:text-sm">Grades 8-12 & A/O Levels</div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-2 mb-4">
+                        <div class="flex items-center gap-2 text-xs sm:text-sm">
+                            <i class="fa-solid fa-square-root-variable text-blue-500"></i>
+                            <span class="text-slate-700">Mathematics</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm">
+                            <i class="fa-solid fa-calculator text-blue-500"></i>
+                            <span class="text-slate-700">Math Literacy</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm">
+                            <i class="fa-solid fa-atom text-blue-500"></i>
+                            <span class="text-slate-700">Physical Science</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm">
+                            <i class="fa-solid fa-dna text-blue-500"></i>
+                            <span class="text-slate-700">Life Sciences</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm">
+                            <i class="fa-solid fa-coins text-blue-500"></i>
+                            <span class="text-slate-700">Accounting</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm">
+                            <i class="fa-solid fa-laptop text-blue-500"></i>
+                            <span class="text-slate-700">CAT</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-xs sm:text-sm col-span-2">
+                            <i class="fa-solid fa-code text-blue-500"></i>
+                            <span class="text-slate-700">Information Technology</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 pt-4 border-t border-slate-100">
+                        <div class="text-xs sm:text-sm text-slate-500">Cambridge A Levels & O Levels also offered</div>
+                    </div>
+                </div>
+                
+                <!-- Tertiary -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-slate-100">
+                    <div class="flex items-center gap-3 mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 text-lg sm:text-xl">
+                            <i class="fa-solid fa-university"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg sm:text-xl font-bold text-slate-900">Tertiary</h3>
+                            <div class="text-purple-600 font-semibold text-xs sm:text-sm">University Level</div>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-2 sm:space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-chart-line text-purple-500"></i>
+                            <span class="text-slate-700 text-sm sm:text-base">Mathematics (Statistics)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-briefcase text-purple-500"></i>
+                            <span class="text-slate-700 text-sm sm:text-base">Business Management</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-coins text-purple-500"></i>
+                            <span class="text-slate-700 text-sm sm:text-base">Economics</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-database text-purple-500"></i>
+                            <span class="text-slate-700 text-sm sm:text-base">Programming & Databases</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-slate-100">
+                        <div class="text-xs sm:text-sm text-slate-500">Undergraduate level support</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Why Choose Us -->
+            <div class="bg-slate-900 rounded-2xl p-6 sm:p-8 text-white">
+                <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">The Aceit Advantage: Exam Coaching from Examiners</h3>
+                <div class="grid sm:grid-cols-3 gap-4 sm:gap-6">
+                    <div class="text-center">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-amber-500 rounded-full flex items-center justify-center text-slate-900 text-xl sm:text-2xl mx-auto mb-3 sm:mb-4">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h4 class="font-bold text-base sm:text-lg mb-1 sm:mb-2">Matric Examiners</h4>
+                        <p class="text-slate-300 text-xs sm:text-sm">Learn from those who mark your actual exam papers</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-amber-500 rounded-full flex items-center justify-center text-slate-900 text-xl sm:text-2xl mx-auto mb-3 sm:mb-4">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="font-bold text-base sm:text-lg mb-1 sm:mb-2">38+ Years Experience</h4>
+                        <p class="text-slate-300 text-xs sm:text-sm">Decades of teaching and examination expertise</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-amber-500 rounded-full flex items-center justify-center text-slate-900 text-xl sm:text-2xl mx-auto mb-3 sm:mb-4">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <h4 class="font-bold text-base sm:text-lg mb-1 sm:mb-2">Proven Exam Coaching</h4>
+                        <p class="text-slate-300 text-xs sm:text-sm">Targeted preparation that delivers results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-12 sm:py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 sm:mb-16">
+                <span class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-white/10 text-amber-400 text-xs sm:text-sm font-bold uppercase tracking-wide mb-4">
+                    <i class="fa-solid fa-road"></i>
+                    Your Journey
+                </span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Four Steps to Your Success</h2>
+                <p class="text-base sm:text-lg lg:text-xl text-slate-300 max-w-3xl mx-auto">
+                    From your first contact to your final exam—every step designed for your achievement.
+                </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
+                <div class="method-card bg-white/5 backdrop-blur rounded-2xl p-5 sm:p-6 border border-white/10">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-amber-500 rounded-xl flex items-center justify-center text-slate-900 font-bold text-lg sm:text-xl mb-3 sm:mb-4">01</div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Contact Us</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        WhatsApp or call us. Tell us your level, curriculum, and what you need to achieve.
+                    </p>
+                </div>
+                
+                <div class="method-card bg-white/5 backdrop-blur rounded-2xl p-5 sm:p-6 border border-white/10">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-amber-500 rounded-xl flex items-center justify-center text-slate-900 font-bold text-lg sm:text-xl mb-3 sm:mb-4">02</div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Assessment</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        We evaluate your current work and show you exactly where you can gain marks.
+                    </p>
+                </div>
+                
+                <div class="method-card bg-white/5 backdrop-blur rounded-2xl p-5 sm:p-6 border border-white/10">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-amber-500 rounded-xl flex items-center justify-center text-slate-900 font-bold text-lg sm:text-xl mb-3 sm:mb-4">03</div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Coaching</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Personalized lessons targeting your gaps with examiner-approved techniques.
+                    </p>
+                </div>
+                
+                <div class="method-card bg-white/5 backdrop-blur rounded-2xl p-5 sm:p-6 border border-white/10">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-amber-500 rounded-xl flex items-center justify-center text-slate-900 font-bold text-lg sm:text-xl mb-3 sm:mb-4">04</div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Excel</h3>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Walk into your exam confident, prepared, and ready to capture every mark.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Your Results - Mobile Carousel -->
+    <section id="results" class="py-12 sm:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 sm:mb-16">
+                <span class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-green-100 text-green-700 text-xs sm:text-sm font-bold uppercase tracking-wide mb-4">
+                    <i class="fa-solid fa-trophy"></i>
+                    Your Potential Results
+                </span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">What You Can Achieve</h2>
+                <p class="text-base sm:text-lg lg:text-xl text-slate-600 max-w-3xl mx-auto">
+                    Real transformations from students who learned to think like examiners.
+                </p>
+            </div>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mb-8 sm:mb-12">
+                <div class="bg-slate-50 rounded-2xl p-4 sm:p-6 text-center border border-slate-100">
+                    <div class="text-2xl sm:text-4xl font-bold text-blue-600 mb-1 sm:mb-2">38+</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-semibold">Years Experience</div>
+                    <div class="text-[10px] sm:text-xs text-slate-500 mt-1">Teaching & Examining</div>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-4 sm:p-6 text-center border border-slate-100">
+                    <div class="text-2xl sm:text-4xl font-bold text-amber-600 mb-1 sm:mb-2">Examiners</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-semibold">Who Mark Your Papers</div>
+                    <div class="text-[10px] sm:text-xs text-slate-500 mt-1">Insider Knowledge</div>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-4 sm:p-6 text-center border border-slate-100">
+                    <div class="text-2xl sm:text-4xl font-bold text-green-600 mb-1 sm:mb-2">Gr 3-Univ</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-semibold">Levels Covered</div>
+                    <div class="text-[10px] sm:text-xs text-slate-500 mt-1">All Academic Stages</div>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-4 sm:p-6 text-center border border-slate-100">
+                    <div class="text-2xl sm:text-4xl font-bold text-slate-900 mb-1 sm:mb-2">4</div>
+                    <div class="text-xs sm:text-sm text-slate-600 font-semibold">Curricula</div>
+                    <div class="text-[10px] sm:text-xs text-slate-500 mt-1">CAPS • IEB • SACAI • ZIMSEC</div>
+                </div>
+            </div>
+            
+            <!-- Desktop Testimonials -->
+            <div class="hidden sm:grid md:grid-cols-2 gap-4 sm:gap-8">
+                <div class="testimonial-card rounded-2xl p-6 sm:p-8">
+                    <div class="flex items-center gap-1 mb-3 sm:mb-4 text-amber-400 text-sm sm:text-base">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-700 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
+                        "My daughter was struggling with Grade 12 Accounting. The exam coaching approach made all the difference—
+                        she learned exactly how to present her answers. She passed with distinction!"
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-slate-900 text-sm sm:text-base">Mrs. N. Moyo</div>
+                            <div class="text-xs sm:text-sm text-slate-500">Kempton Park</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs sm:text-sm font-bold text-green-600">CAPS Matric</div>
+                            <div class="text-[10px] sm:text-xs text-slate-500">Accounting</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card rounded-2xl p-6 sm:p-8">
+                    <div class="flex items-center gap-1 mb-3 sm:mb-4 text-amber-400 text-sm sm:text-base">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-700 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
+                        "I needed help with university Statistics. The tutor explained complex concepts in a way I finally understood. 
+                        Passed my module and can continue with my Business Management degree."
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-slate-900 text-sm sm:text-base">Thabo K.</div>
+                            <div class="text-xs sm:text-sm text-slate-500">University Student</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs sm:text-sm font-bold text-blue-600">Tertiary Level</div>
+                            <div class="text-[10px] sm:text-xs text-slate-500">Statistics</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Testimonials Carousel -->
+            <div class="sm:hidden">
+                <div class="carousel-container" id="testimonials-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <div class="testimonial-card rounded-2xl p-6 h-full">
+                                                        <div class="flex items-center gap-1 mb-3 text-amber-400 text-sm">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-slate-700 mb-4 leading-relaxed text-sm">
+                                    "My daughter was struggling with Grade 12 Accounting. The exam coaching approach made all the difference—she passed with distinction!"
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-bold text-slate-900 text-sm">Mrs. N. Moyo</div>
+                                        <div class="text-xs text-slate-500">Kempton Park</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-xs font-bold text-green-600">CAPS Matric</div>
+                                        <div class="text-[10px] text-slate-500">Accounting</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="testimonial-card rounded-2xl p-6 h-full">
+                                <div class="flex items-center gap-1 mb-3 text-amber-400 text-sm">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-slate-700 mb-4 leading-relaxed text-sm">
+                                    "I needed help with university Statistics. The tutor explained complex concepts in a way I finally understood. Passed my module!"
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-bold text-slate-900 text-sm">Thabo K.</div>
+                                        <div class="text-xs text-slate-500">University Student</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-xs font-bold text-blue-600">Tertiary Level</div>
+                                        <div class="text-[10px] text-slate-500">Statistics</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="testimonial-card rounded-2xl p-6 h-full">
+                                <div class="flex items-center gap-1 mb-3 text-amber-400 text-sm">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-slate-700 mb-4 leading-relaxed text-sm">
+                                    "The exam techniques I learned helped me improve from 60% to 85% in Physical Science. Best investment in my education!"
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-bold text-slate-900 text-sm">Sarah M.</div>
+                                        <div class="text-xs text-slate-500">Grade 11 Student</div>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-xs font-bold text-blue-600">IEB Student</div>
+                                        <div class="text-[10px] text-slate-500">Physical Science</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots" id="testimonials-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Your Investment -->
+    <section id="investment" class="py-12 sm:py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 sm:mb-16">
+                <span class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-xs sm:text-sm font-bold uppercase tracking-wide mb-4">
+                    <i class="fa-solid fa-tag"></i>
+                    Your Investment
+                </span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Invest in Your Success</h2>
+                <p class="text-base sm:text-lg lg:text-xl text-slate-600">Professional exam coaching that delivers results.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-4 sm:gap-8 max-w-5xl mx-auto">
+                <!-- Assessment -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-slate-200">
+                    <div class="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wide mb-2">Start Here</div>
+                    <div class="text-3xl sm:text-5xl font-bold text-slate-900 mb-2">R250</div>
+                    <div class="text-slate-600 mb-4 sm:mb-6 text-sm sm:text-base">Diagnostic assessment (90 min)</div>
+                    
+                    <ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-xs sm:text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-500"></i> Work evaluation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-500"></i> Marked to exam standards</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-500"></i> Personal improvement plan</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-500"></i> No obligation</li>
+                    </ul>
+                    
+                    <button onclick="openContactModal()" class="block w-full py-2.5 sm:py-3 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold text-center hover:border-blue-500 hover:text-blue-600 transition-all text-sm sm:text-base">
+                        Book Assessment
+                    </button>
+                </div>
+                
+                <!-- Single Session -->
+                <div class="pricing-featured rounded-2xl p-6 sm:p-8 text-white shadow-2xl relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-500 text-slate-900 px-3 sm:px-4 py-1 rounded-full text-[10px] sm:text-xs font-bold uppercase">Most Popular</div>
+                    <div class="text-xs sm:text-sm font-bold text-blue-200 uppercase tracking-wide mb-2">Individual Coaching</div>
+                    <div class="text-3xl sm:text-5xl font-bold mb-2">R450</div>
+                    <div class="text-blue-200 mb-4 sm:mb-6 text-sm sm:text-base">Per hour • Flexible booking</div>
+                    
+                    <ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-xs sm:text-sm text-blue-100">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> 60-minute focused lesson</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> In-person or online</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Past paper practice</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Examiner feedback</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> WhatsApp support</li>
+                    </ul>
+                    
+                    <button onclick="openContactModal()" class="block w-full py-2.5 sm:py-3 bg-amber-500 text-slate-900 rounded-xl font-bold text-center hover:bg-amber-400 transition-all shadow-lg text-sm sm:text-base">
+                        Book Now
+                    </button>
+                </div>
+                
+                <!-- Package -->
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-slate-200">
+                    <div class="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wide mb-2">Commit to Success</div>
+                    <div class="text-3xl sm:text-5xl font-bold text-slate-900 mb-2">R4,200</div>
+                    <div class="text-slate-600 mb-4 sm:mb-6 text-sm sm:text-base">10 sessions • Save R300</div>
+                    
+                    <ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-xs sm:text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-500"></i> 10 structured lessons</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-500"></i> Priority scheduling</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-500"></i> Mock exam included</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-500"></i> Unlimited WhatsApp</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-500"></i> Progress updates</li>
+                    </ul>
+                    
+                    <button onclick="openContactModal()" class="block w-full py-2.5 sm:py-3 border-2 border-slate-300 text-slate-700 rounded-xl font-semibold text-center hover:border-blue-500 hover:text-blue-600 transition-all text-sm sm:text-base">
+                        Get Package
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Start Your Journey -->
+    <section id="start" class="py-12 sm:py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8 sm:mb-12">
+                <span class="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-green-100 text-green-700 text-xs sm:text-sm font-bold uppercase tracking-wide mb-4">
+                    <i class="fa-solid fa-rocket"></i>
+                    Get Started Today
+                </span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Begin Your Success Story</h2>
+                <p class="text-base sm:text-lg lg:text-xl text-slate-600">Contact us now and take the first step toward exam excellence.</p>
+            </div>
+            
+            <!-- Hidden on mobile -->
+            <div class="hidden sm:grid sm:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-12">
+                <a href="https://wa.me/27659327413" target="_blank" class="btn-whatsapp text-white p-6 sm:p-8 rounded-2xl shadow-xl text-center group">
+                    <div class="text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="text-xl sm:text-2xl font-bold mb-2">WhatsApp Us</div>
+                    <div class="text-green-100 text-sm sm:text-base">065 932 7413</div>
+                    <div class="text-xs sm:text-sm text-green-200 mt-2">Fastest response • Available now</div>
+                </a>
+                
+                <button onclick="openContactModal()" class="btn-primary text-white p-6 sm:p-8 rounded-2xl shadow-xl text-center group">
+                    <div class="text-4xl sm:text-5xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text-xl sm:text-2xl font-bold mb-2">Send Message</div>
+                    <div class="text-blue-100 text-sm sm:text-base">Quick response guaranteed</div>
+                    <div class="text-xs sm:text-sm text-blue-200 mt-2">Fill out the contact form</div>
+                </button>
+            </div>
+            
+            <!-- Mobile CTA - Simplified -->
+            <div class="sm:hidden mb-8">
+                <button onclick="openContactModal()" class="w-full btn-primary text-white p-6 rounded-2xl shadow-xl text-center">
+                    <div class="text-3xl mb-2">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text-xl font-bold">Get Started Now</div>
+                    <div class="text-blue-100 text-sm mt-1">Tap to send us a message</div>
+                </button>
+            </div>
+            
+            <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 text-center border border-slate-200">
+                <div class="flex items-center justify-center gap-2 text-slate-600 mb-2">
+                    <i class="fa-solid fa-location-dot text-blue-600 text-lg sm:text-xl"></i>
+                    <span class="font-semibold text-sm sm:text-base">Visit Our Centre</span>
+                </div>
+                <div class="text-base sm:text-lg text-slate-900 font-bold mb-1">3 West Street (Old Standard Bank Building)</div>
+                <div class="text-slate-600 text-sm sm:text-base">Kempton Park, 1619</div>
+                <div class="mt-4 flex flex-wrap justify-center gap-4 text-xs sm:text-sm">
+                    <span class="flex items-center gap-1 text-slate-500">
+                        <i class="fa-solid fa-clock text-amber-500"></i>
+                        Mon-Sat: 8am-6pm
+                    </span>
+                    <span class="flex items-center gap-1 text-slate-500">
+                        <i class="fa-solid fa-check-circle text-green-500"></i>
+                        All curriculums welcome
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect With Us -->
+    <section class="py-12 sm:py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">Stay Connected</h3>
+            <p class="text-slate-600 mb-6 sm:mb-8 text-sm sm:text-base">Follow us for exam tips, study strategies, and success stories</p>
+            
+            <div class="flex justify-center gap-3 sm:gap-4 mb-6 sm:mb-8 flex-wrap">
+                <a href="https://facebook.com/AceitTutors" target="_blank" class="social-icon bg-blue-600 text-white hover:bg-blue-700 w-10 h-10 sm:w-11 sm:h-11" title="Facebook">
+                    <i class="fa-brands fa-facebook-f text-lg sm:text-xl"></i>
+                </a>
+                <a href="https://instagram.com/acaitutors" target="_blank" class="social-icon bg-gradient-to-br from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 w-10 h-10 sm:w-11 sm:h-11" title="Instagram">
+                    <i class="fa-brands fa-instagram text-lg sm:text-xl"></i>
+                </a>
+                <a href="https://linkedin.com/company/acait-tutors" target="_blank" class="social-icon bg-blue-700 text-white hover:bg-blue-800 w-10 h-10 sm:w-11 sm:h-11" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in text-lg sm:text-xl"></i>
+                </a>
+                <a href="https://youtube.com/@AceitTutors" target="_blank" class="social-icon bg-red-600 text-white hover:bg-red-700 w-10 h-10 sm:w-11 sm:h-11" title="YouTube">
+                    <i class="fa-brands fa-youtube text-lg sm:text-xl"></i>
+                </a>
+                <a href="https://wa.me/27659327413" target="_blank" class="social-icon bg-green-500 text-white hover:bg-green-600 w-10 h-10 sm:w-11 sm:h-11" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp text-lg sm:text-xl"></i>
+                </a>
+            </div>
+            
+            <div class="grid sm:grid-cols-3 gap-4 text-xs sm:text-sm text-slate-600">
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-location-dot text-blue-600"></i>
+                    <span>3 West Street, Kempton Park, 1619</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone text-blue-600"></i>
+                    <span>071 937 0155</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-green-600"></i>
+                    <span>065 932 7413</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desktop Footer -->
+    <footer class="hidden sm:block bg-slate-900 text-slate-300 py-10 sm:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div class="sm:col-span-2 lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                            <i class="fa-solid fa-a"></i>
+                        </div>
+                        <span class="logo-text text-xl text-white">Aceit<span class="text-blue-400">Tutors</span></span>
+                    </div>
+                    <p class="text-sm mb-4 max-w-sm text-slate-400">
+                        Professional exam coaching from qualified teachers and matric examiners. 
+                        Serving Kempton Park and online students across South Africa.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-3 text-sm">
+                        <span class="flex items-center gap-1 text-amber-400"><i class="fa-solid fa-certificate"></i> 38+ Years Experience</span>
+                        <span class="text-slate-500 hidden sm:inline">|</span>
+                        <span class="flex items-center gap-1 text-green-400"><i class="fa-solid fa-check-circle"></i> Matric Examiners</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Your Journey</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#gain" class="hover:text-blue-400 transition-colors">What You'll Gain</a></li>
+                        <li><a href="#offer" class="hover:text-blue-400 transition-colors">What We Offer</a></li>
+                        <li><a href="#results" class="hover:text-blue-400 transition-colors">Your Results</a></li>
+                        <li><a href="#investment" class="hover:text-blue-400 transition-colors">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Contact Us</h4>
+                    <ul class="space-y-3 text-sm text-slate-400">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot mt-1 text-blue-400"></i>
+                            <span>3 West Street (Old Standard Bank)<br>Kempton Park, 1619</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-blue-400"></i>
+                            <span>071 937 0155</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-green-400"></i>
+                            <span>065 932 7413</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="flex gap-2 mt-4">
+                        <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-blue-600 transition-all text-white">
+                            <i class="fa-brands fa-facebook-f text-xs"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-pink-600 transition-all text-white">
+                            <i class="fa-brands fa-instagram text-xs"></i>
+                        </a>
+                        <a href="https://wa.me/27659327413" target="_blank" class="w-8 h-8 rounded bg-white/10 flex items-center justify-center hover:bg-green-500 transition-all text-white">
+                            <i class="fa-brands fa-whatsapp text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col gap-4 text-sm text-slate-500">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <p>&copy; 2025 Aceit Tutors. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+                
+                <!-- Developer Credit -->
+                <div class="text-center sm:text-right pt-4 border-t border-slate-800/50">
+                    <p class="text-xs text-slate-600">
+                        Developed by <a href="https://www.edtechsolutions.co.za" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors font-semibold">EdTech Solutions</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Footer - Compact -->
+    <footer id="mobile-footer" class="sm:hidden mobile-footer-compact bg-slate-900 text-slate-300">
+        <div class="footer-main">
+            <!-- Logo -->
+            <div class="footer-logo flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                    <i class="fa-solid fa-a"></i>
+                </div>
+                <span class="logo-text text-lg text-white">Aceit<span class="text-blue-400">Tutors</span></span>
+            </div>
+            
+            <!-- Quick Contact -->
+            <div class="footer-contact">
+                <a href="https://wa.me/27659327413" class="text-green-400">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>065 932 7413</span>
+                </a>
+                <a href="tel:0719370155" class="text-blue-400">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>071 937 0155</span>
+                </a>
+                <div class="text-slate-500 text-sm">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>3 West St, Kempton Park</span>
+                </div>
+            </div>
+            
+            <!-- Credit -->
+            <div class="footer-credit text-center text-slate-600">
+                <p class="text-xs">&copy; 2025 Aceit Tutors</p>
+                <p class="text-[10px] mt-1">Developed by <a href="https://www.edtechsolutions.co.za" target="_blank" class="text-blue-400">EdTech Solutions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+       // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const menuLines = mobileMenuBtn.querySelectorAll('span');
+
+        function openMobileMenu() {
+            mobileMenuOverlay.classList.remove('translate-x-full');
+            mobileMenuOverlay.classList.add('translate-x-0');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            
+            // Animate hamburger to X
+            menuLines[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+            menuLines[1].style.opacity = '0';
+            menuLines[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+        }
+
+        function closeMobileMenu() {
+            mobileMenuOverlay.classList.add('translate-x-full');
+            mobileMenuOverlay.classList.remove('translate-x-0');
+            document.body.style.overflow = ''; // Restore scrolling
+            
+            // Reset hamburger
+            menuLines[0].style.transform = '';
+            menuLines[1].style.opacity = '1';
+            menuLines[2].style.transform = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', function() {
+            if (mobileMenuOverlay.classList.contains('translate-x-full')) {
+                openMobileMenu();
+            } else {
+                closeMobileMenu();
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu-overlay a').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Contact Modal Functions
+        function openContactModal() {
+            document.getElementById('contact-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeContactModal() {
+            document.getElementById('contact-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeContactModal();
+            }
+        });
+
+        // Handle Contact Form Submit
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            
+            // Show success message
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            
+            // Close modal and reset form
+            closeContactModal();
+            e.target.reset();
+        }
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Smooth Scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Show/hide floating buttons based on scroll
+        const floatingWhatsApp = document.querySelector('.floating-whatsapp');
+        const backToTop = document.getElementById('back-to-top');
+        const mobileFooter = document.getElementById('mobile-footer');
+        
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+            
+            // Show WhatsApp after scrolling down
+            if (currentScroll >1) {
+                floatingWhatsApp.style.opacity = '1';
+                floatingWhatsApp.style.pointerEvents = 'auto';
+            } else {
+                floatingWhatsApp.style.opacity = '0';
+                floatingWhatsApp.style.pointerEvents = 'none';
+            }
+            
+            // Show back to top when near footer (on mobile)
+            if (window.innerWidth < 640 && mobileFooter) {
+                const footerRect = mobileFooter.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                
+                // Show back to top when footer is visible or near visible
+                if (footerRect.top < windowHeight + 100) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }
+        });
+
+        // Carousel functionality
+        function initCarousel(containerId, dotsId) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            
+            const track = container.querySelector('.carousel-track');
+            const slides = container.querySelectorAll('.carousel-slide');
+            const dotsContainer = document.getElementById(dotsId);
+            
+            if (!slides.length) return;
+            
+            let currentSlide = 0;
+            let startX = 0;
+            let currentX = 0;
+            let isDragging = false;
+            
+            // Create dots
+            slides.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.className = 'carousel-dot' + (index === 0 ? ' active' : '');
+                dot.setAttribute('aria-label', 'Go to slide ' + (index + 1));
+                dot.addEventListener('click', function() {
+                    goToSlide(index);
+                });
+                dotsContainer.appendChild(dot);
+            });
+            
+            const dots = dotsContainer.querySelectorAll('.carousel-dot');
+            
+            function goToSlide(index) {
+                currentSlide = index;
+                track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+                
+                dots.forEach(function(dot, i) {
+                    dot.classList.toggle('active', i === currentSlide);
+                });
+            }
+            
+            function nextSlide() {
+                goToSlide((currentSlide + 1) % slides.length);
+            }
+            
+            function prevSlide() {
+                goToSlide((currentSlide - 1 + slides.length) % slides.length);
+            }
+            
+            // Touch events for swipe
+            container.addEventListener('touchstart', function(e) {
+                isDragging = true;
+                startX = e.touches[0].clientX;
+                track.style.transition = 'none';
+            }, { passive: true });
+            
+            container.addEventListener('touchmove', function(e) {
+                if (!isDragging) return;
+                currentX = e.touches[0].clientX;
+                const diff = currentX - startX;
+                const translate = -(currentSlide * 100) + (diff / container.offsetWidth * 100);
+                track.style.transform = 'translateX(' + translate + '%)';
+            }, { passive: true });
+            
+            container.addEventListener('touchend', function(e) {
+                isDragging = false;
+                track.style.transition = 'transform 0.3s ease-out';
+                
+                const diff = currentX - startX;
+                const threshold = container.offsetWidth * 0.2;
+                
+                if (Math.abs(diff) > threshold) {
+                    if (diff > 0) {
+                        prevSlide();
+                    } else {
+                        nextSlide();
+                    }
+                } else {
+                    goToSlide(currentSlide);
+                }
+            });
+            
+            // Auto-advance carousel
+            let autoAdvance = setInterval(nextSlide, 5000);
+            
+            // Pause on interaction
+            container.addEventListener('mouseenter', function() {
+                clearInterval(autoAdvance);
+            });
+            
+            container.addEventListener('mouseleave', function() {
+                autoAdvance = setInterval(nextSlide, 5000);
+            });
+            
+            container.addEventListener('touchstart', function() {
+                clearInterval(autoAdvance);
+            }, { passive: true });
+        }
+
+            // Video Play Function
+        function playVideo(overlay) {
+            const wrapper = overlay.parentElement;
+            const video = wrapper.querySelector('.video-player');
+            const poster = wrapper.querySelector('.video-poster');
+            
+            // Hide overlay and poster, show video
+            overlay.style.display = 'none';
+            poster.style.display = 'none';
+            video.classList.remove('hidden');
+            
+            // Play video
+            video.play();
+        }
+
+        // Initialize carousels when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize carousels on mobile
+            if (window.innerWidth < 640) {
+                initCarousel('gain-carousel', 'gain-dots');
+                initCarousel('testimonials-carousel', 'testimonials-dots');
+            }
+        });
+    </script>
+</body>
+</html>        
